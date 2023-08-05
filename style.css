@@ -36,9 +36,11 @@
     box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
 }
+.wrapper {
+    background-color: aquamarine;
+}
 
 .container {
-    background-color: aqua;
     height: 100vh;
     width: 600px;
     margin: auto;
@@ -97,31 +99,77 @@
     color: var(--Light-lavender);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .right {
     background-color: var(--White);
     width: 50%;
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right h3 {
+    
+}
+
+.options {
+    width: 85%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 7px;
+}
+.one {
+    background-color: hsla(0, 100%, 67%, 15%);
+}
+
+.one .left-span {
+    color: var(--Light-red);
+}
+
+.two {
+    background-color: hsla(39, 100%, 56%, 15%);
+}
+.two .left-span {
+    color: var(--Orangey-yellow);
+}
+
+.three {
+    background-color: hsla(166, 100%, 37%, 15%);
+}
+
+.three .left-span {
+    color: var(--Green-teal);
+}
+
+.four {
+    background-color: hsla(234, 85%, 45%, 15%);
+}
+
+.four .left-span {
+    color: var(--Cobalt-blue);
+}
+
+p {
+    display: inline;
+    color: hsla(223, 23%, 37%, 0.75);
+}
+
+.cta-btn {
+    margin-top: 15px;
+    padding: 12px;
+    width: 85%;
+    border-radius: 20px;
+    border: none;
+    color: var(--White);
+    font-size: 18px;
+    background-color: var(--Dark-gray-blue);
+    cursor: pointer;
+}
+
+.cta-btn:hover{
+    background-image: linear-gradient(180deg, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    transition: .5s ease-in-out;
 }
